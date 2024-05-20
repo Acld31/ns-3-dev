@@ -1,0 +1,31 @@
+Time: +1s, Nix Routing
+Route path from Node 1 to Node 1, Nix Vector: 
+10.1.1.2                 (Node 1)  ---->   10.1.1.2                 (Node 1)
+
+Node: 0, Time: +1s, Local time: +1s, Nix Routing
+NixCache:
+Destination                   NixVector
+10.1.3.2                      101 (3 bits left)
+IpRouteCache:
+Destination                   Gateway                       Source                        OutputDevice
+10.1.3.2                      10.1.4.2                      10.1.4.1                        1
+
+Node: 1, Time: +1s, Local time: +1s, Nix Routing
+NixCache:
+IpRouteCache:
+
+Node: 2, Time: +1s, Local time: +1s, Nix Routing
+NixCache:
+IpRouteCache:
+Destination                   Gateway                       Source                        OutputDevice
+10.1.3.2                      10.1.3.2                      10.1.3.1                        1
+10.1.4.1                      10.1.4.1                      10.1.4.2                        2
+
+Node: 3, Time: +1s, Local time: +1s, Nix Routing
+NixCache:
+Destination                   NixVector
+10.1.4.1                      010 (3 bits left)
+IpRouteCache:
+Destination                   Gateway                       Source                        OutputDevice
+10.1.4.1                      10.1.3.1                      10.1.3.2                        0
+
